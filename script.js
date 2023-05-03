@@ -7,7 +7,7 @@ async function fetchAdvice(){
     const data = await response.json()
 
     adviceId.textContent = data.slip.id;
-    adviceContent.textContent = data.slip.advice
+    adviceContent.textContent = `"${data.slip.advice}"`
     console.log(data);
     
 }
